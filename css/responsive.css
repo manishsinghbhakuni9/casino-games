@@ -1,0 +1,125 @@
+@media screen and (max-width: 506px) {
+    .testimonialimg {
+        width: 100%;
+        margin: auto;
+    }
+    .img1, .img2, .img3, .img4, .img5, .img6{
+        width: 45%;
+    }
+    #bgwhite .carousel-inner .carousel-item img {
+        width: 100%;
+        height: 100%;
+    }
+    .boxWhite h4 {
+        font-size: 14px;
+    }
+    .smtext {
+        font-size: 9.5px;
+    }
+
+    .fontsm i {
+        font-size: 8px;
+    }
+    .headplay{
+        font-size: 1.35rem;
+        
+    }
+    p{
+        font-size: 12px;
+        color: #676e7c;
+        
+    }
+    .w-20{
+        width: 25%;
+    }
+
+    .borderright:before {
+        content: "|";
+        position: absolute;
+        left: 109%;
+        color: rgba(0, 0, 0, .2);
+        font-size: 1.4rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .installbtn{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .installbtn2 {
+        font-size: 14px;
+        width: 100%;
+        padding: 5px;
+    }
+    .installbtn3{
+        font-size: 12px;
+    }
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+        top: 30%;
+    }
+    #casinocard .owl-nav, #offeringsect .owl-nav{
+        display: none;
+    }
+    .owl-nav .owl-prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -12px;
+    }
+    .owl-nav .owl-next{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -12px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-nav li a{
+        color: #fff;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .width25 {
+        width: 37% !important;
+    }
+
+    .width23 {
+        width: 40% !important;
+    }
+
+    .font25 {
+        font-size: 0.75rem;
+    }
+    .imgheighthere{
+        height: 15rem;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .padsm {
+        padding-top: 2px;
+    }
+    .installbtn{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .navbar-brand{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .padsm {
+        padding-top: 0;
+    }
+    .navbar-brand{
+        max-width: 30%;
+    }
+}
