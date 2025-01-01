@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: #e4e4e4;
+    background: #e6e6e6;
 }
 img{
     width: 100%;
@@ -14,6 +14,12 @@ a{
 }
 
 /* typography */
+.fontWeight700{
+    font-weight: 700;
+}
+.fontWeight500{
+    font-weight: 500;
+}
 .colorDark{
     color: #727272;
 }
@@ -90,7 +96,7 @@ p{
     font-weight: 400;
     text-overflow: ellipsis;
 }
-#navsect input{
+#navsect input, #bonusInput input{
     border-radius: 52px;
     border: 1px solid #efefef;
     padding: 15px 0 15px 45px;
@@ -184,12 +190,15 @@ a{
     border-radius: 10px;
     background-image: linear-gradient(0deg, #dd2676 0%, #fc4d35 100%);
     padding: 16px 4px;
+    width: 100%;
   }
-
+  
   .imgBox2{
     border-radius: 10px;
     background-image: linear-gradient(0deg, rgba(242,142,38,0.996078431372549) 0%, rgba(253,100,79,0.9999999999999999) 100%);
     padding: 16px 22px;
+    width: 100%;
+
   }
 
   .imgBox3{
@@ -498,14 +507,60 @@ h4 .smtext{
 .borderTopRadius100{
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.1); /* Smooth shadow effect */
-    transition: transform 0.3s ease; /* Animation for hover effect */
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3); /* Smooth shadow effect */
 }
 
+.borderBottomRadius100{
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3); /* Smooth shadow effect */
+}
 .input-group, .input-group-text, .input-group input{
     border-radius: 15px !important;
 }
 .input-group-text{
     background-image: radial-gradient(circle at center, rgba(250,204,34,0.996078431372549) 0%, rgba(248,181,0,0.9999999999999999) 100%);
     font-size: 12px !important;
+}
+
+
+/* ///Bonus */
+
+.bonusbtn{
+    background: #fff;
+    border: 1px solid #efefef;
+    border-radius: 24px;
+    padding: 5px 8px;
+    font-size: 14px;
+    color: #3089fe;
+    width: 100%;
+}
+.bonusHead{
+    color: #0072ff;
+    font-size: 40px;
+    font-weight: 900;
+}
+#expertReviews .owl-nav{
+    color: #fff;
+}
+.bgBox{
+    background-color: #e4e4e4;
+    padding: 5px 12px;
+    border-radius: 8px;
+
+}
+.w-fit-content{
+    width: fit-content;
+}
+.bg-bonus{
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .2);
+}
+.light_dark{
+    color: #6e6e6e;
+}
+.mobhead{
+    font-size: 14px;
 }
