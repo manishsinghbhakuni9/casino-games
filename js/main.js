@@ -8,7 +8,33 @@ $(document).ready(function(){
   var owl7 = $('#mobBonus .owl-themecarousel');
   var owl8 = $('#offeringsect .owl-themecarousel');
   var owl9 = $('#expertcornersection .owl-themecarousel');
+  var owl10 = $('#bonussection .owl-themecarousel');
   
+  owl10.owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    nav:true,
+    items: 1,
+    dots: false,
+    arrows:true,
+    responsive:{
+      0:{
+          items:2,
+          nav:true
+      },
+      600:{
+          items:3,
+          nav:false
+      },
+      1000:{
+          items:3,
+          nav:true,
+          loop:false
+      }
+    }
+  });
+
   owl9.owlCarousel({
     loop:true,
     margin:10,
