@@ -1,4 +1,19 @@
 @media screen and (max-width: 506px) {
+
+    input::placeholder{
+        font-size: 10px;
+    }
+    .borderTopRadius100{
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3); /* Smooth shadow effect */
+    }
+    
+    .borderBottomRadius100{
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.3); /* Smooth shadow effect */
+    }
     .bonusbtn {
         font-size: 9px;
     }
@@ -125,4 +140,5 @@
     .navbar-brand{
         max-width: 30%;
     }
+
 }
