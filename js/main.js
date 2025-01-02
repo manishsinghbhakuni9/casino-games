@@ -10,7 +10,67 @@ $(document).ready(function(){
   var owl9 = $('#expertcornersection .owl-themecarousel');
   var owl10 = $('#bonussection .owl-themecarousel');
   var owl11 = $('#mobileBtns .owl-themecarousel');
+  var owl12 = $('#slotssection .owl-themecarousel');
+  var owl13 = $('#mobProviders .owl-themecarousel');
+
+  owl13.owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    nav:true,
+    items: 1,
+    dots: false,
+    arrows:true,
+    responsive:{
+      0:{
+          items:2,
+          nav:true
+      },
+      300:{
+        items:2,
+        nav:false
+      },
+      600:{
+          items:3,
+          nav:false
+      },
+      1000:{
+          items:5,
+          nav:true,
+          loop:false
+      }
+    }
+  });
   
+  owl12.owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    nav:true,
+    items: 1,
+    dots: false,
+    arrows:true,
+    responsive:{
+      0:{
+          items:3,
+          nav:true
+      },
+      300:{
+        items:2,
+        nav:false
+      },
+      600:{
+          items:3,
+          nav:false
+      },
+      1000:{
+          items:5,
+          nav:true,
+          loop:false
+      }
+    }
+  });
+
   owl11.owlCarousel({
     loop:true,
     margin:10,
