@@ -96,7 +96,7 @@ p{
     font-weight: 400;
     text-overflow: ellipsis;
 }
-#navsect input, #bonusInput input{
+#navsect input, #bonusInput input, #expertReviews input{
     border-radius: 52px;
     border: 1px solid #efefef;
     padding: 15px 0 15px 45px;
