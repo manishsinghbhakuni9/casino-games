@@ -9,7 +9,36 @@ $(document).ready(function(){
   var owl8 = $('#offeringsect .owl-themecarousel');
   var owl9 = $('#expertcornersection .owl-themecarousel');
   var owl10 = $('#bonussection .owl-themecarousel');
+  var owl11 = $('#mobileBtns .owl-themecarousel');
   
+  owl11.owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    nav:true,
+    items: 1,
+    dots: false,
+    arrows:true,
+    responsive:{
+      0:{
+          items:3,
+          nav:true
+      },
+      300:{
+        items:2,
+        nav:false
+      },
+      600:{
+          items:3,
+          nav:false
+      },
+      1000:{
+          items:3,
+          nav:true,
+          loop:false
+      }
+    }
+  });
   owl10.owlCarousel({
     loop:true,
     margin:10,
