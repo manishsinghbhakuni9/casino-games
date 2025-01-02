@@ -1,4 +1,7 @@
 @media screen and (max-width: 506px) {
+    .bonusbtn {
+        font-size: 9px;
+    }
     .testimonialimg {
         width: 100%;
         margin: auto;

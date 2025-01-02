@@ -531,7 +531,7 @@ h4 .smtext{
     border: 1px solid #efefef;
     border-radius: 24px;
     padding: 5px 8px;
-    font-size: 14px;
+    font-size: 12px;
     color: #3089fe;
     width: 100%;
 }
@@ -542,6 +542,9 @@ h4 .smtext{
 }
 #expertReviews .owl-nav{
     color: #fff;
+}
+#mobileBtns .owl-nav{
+    display: none;
 }
 .bgBox{
     background-color: #e4e4e4;
