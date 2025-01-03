@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background: #e6e6e6;
+    background: #e6e6e6 !important;
+    outline: none;
 }
 img{
     width: 100%;
@@ -12,7 +13,9 @@ img{
 a{
     text-decoration: none;
 }
-
+a:hover{
+    color: #f9c61a !important;
+}
 /* typography */
 .fontWeight700{
     font-weight: 700;
@@ -141,9 +144,9 @@ a{
     border-radius: 20px;
     height: 100%;
 }
-.boxWhite h4{
+/* .boxWhite h4{
     font-size: 18px;
-}
+} */
 .boxWhite img{
     /* width: 60px; */
     height: auto; 
@@ -160,7 +163,7 @@ a{
     padding: 20px; */
     box-sizing: border-box;
     background-color: #fff; /* Optional: Ensure the white background */
-    border-radius: 8px; /* Optional: Add some styling */
+    border-radius: 18px; /* Optional: Add some styling */
     border: 1px solid rgba(0, 0, 0, 0.1);;
   }
   
@@ -187,14 +190,14 @@ a{
     color: #333333;
   }
   .imgBox{
-    border-radius: 10px;
+    border-radius: 18px;
     background-image: linear-gradient(0deg, #dd2676 0%, #fc4d35 100%);
     padding: 16px 4px;
     width: 100%;
   }
   
   .imgBox2{
-    border-radius: 10px;
+    border-radius: 18px;
     background-image: linear-gradient(0deg, rgba(242,142,38,0.996078431372549) 0%, rgba(253,100,79,0.9999999999999999) 100%);
     padding: 16px 22px;
     width: 100%;
@@ -202,7 +205,7 @@ a{
   }
 
   .imgBox3{
-    border-radius: 10px;
+    border-radius: 18px;
     background-image: linear-gradient(0deg, #98e05f 0%, #0de3ac 100%);
     padding: 10px;
   }
@@ -210,7 +213,7 @@ a{
     height: 100%;
   }
   .imgBox4{
-    border-radius: 10px;
+    border-radius: 18px;
     background-image: linear-gradient(0deg, rgba(242,142,38,0.996078431372549) 0%, rgba(253,100,79,0.9999999999999999) 100%);
     width: 100%;
     height: 100px;
@@ -237,7 +240,7 @@ a{
     font-size: 14px !important;
     color: #fff;
     border: 1px solid #3089fe;
-    border-radius: 18px;
+    border-radius: 8px;
     background-image: linear-gradient(0deg, #0072ff 0%, #4095fd 100%);
 }
 .installbtn2{
@@ -592,3 +595,4 @@ h4 .smtext{
 .boxShadow0{
     box-shadow: none;
 }
+
