@@ -37,7 +37,7 @@ $(document).ready(function(){
       1000:{
           items:5,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -66,7 +66,7 @@ $(document).ready(function(){
       1000:{
           items:5,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -95,7 +95,7 @@ $(document).ready(function(){
       1000:{
           items:3,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -119,7 +119,7 @@ $(document).ready(function(){
       1000:{
           items:3,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -144,7 +144,7 @@ $(document).ready(function(){
       1000:{
           items:4,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -168,7 +168,7 @@ $(document).ready(function(){
       1000:{
           items:4,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -201,7 +201,7 @@ $(document).ready(function(){
       1000:{
           items:5,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -225,7 +225,7 @@ $(document).ready(function(){
       1000:{
           items:4,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -251,7 +251,7 @@ $(document).ready(function(){
       1000:{
           items:3,
           nav:true,
-          loop:false
+          loop:true
       }
     }
   });
@@ -275,7 +275,7 @@ $(document).ready(function(){
       1000:{
           items:6,
           nav:true,
-          loop:false
+          loop:true
       }
   }
   });
@@ -284,9 +284,11 @@ $(document).ready(function(){
     margin:10,
     autoplay: true,
     nav:false,
-    items: 1,
+    items: 2.2,
     dots: false,
     arrows:false,
+    center: true, // Enable centering
+    stagePadding: 20
   });
 
   owl.owlCarousel({
