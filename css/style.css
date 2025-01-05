@@ -102,6 +102,10 @@ p{
 #navsect, #scrollNav{
     background-image: linear-gradient(115deg, #0072ff 0%, #4899fc 100%);
 }
+#scrollNav{
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
 .navbar-nav li a{
     color: #fff;
     font-size: 18px;
@@ -146,7 +150,7 @@ a{
     outline: none;
 }
 .inputWdImage img{
-    width: 12%;
+    width: 8%;
     cursor: pointer;
 }
 .boxWhite{
