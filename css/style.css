@@ -9,6 +9,7 @@ img{
 }
 *{
     font-family: "Montserrat", serif;
+    outline: none;
 }
 a{
     text-decoration: none;
@@ -28,6 +29,7 @@ a:hover{
 }
 .colorGreen{
     color: #3fcc60;
+    font-weight: 500;
 }
 .smtext{
     font-size: 0.73rem;
@@ -90,7 +92,14 @@ p{
 }
 
 /* navbarsect */
-#navsect{
+.bars,.navbar-toggler:focus {
+
+    box-shadow: none !important;
+}
+#navsect input{
+    z-index: 100;
+}
+#navsect, #scrollNav{
     background-image: linear-gradient(115deg, #0072ff 0%, #4899fc 100%);
 }
 .navbar-nav li a{
@@ -103,6 +112,7 @@ p{
     border-radius: 52px;
     border: 1px solid #efefef;
     padding: 15px 0 15px 45px;
+    width: 100%;
 }
 .navbar-brand{
     max-width: 40%;
@@ -189,9 +199,9 @@ a{
   }
   .text-gray{
     color: #333333;
-  }
+  }             
   .imgBox{
-    border-radius: 18px;
+    border-radius: 10px;
     background-image: linear-gradient(0deg, #dd2676 0%, #fc4d35 100%);
     padding: 16px 4px;
     width: 100%;
@@ -240,25 +250,30 @@ a{
     padding: 6px 18px;
     font-size: 14px !important;
     color: #fff;
-    border: 1px solid #3089fe;
+    border: 1px solid #568fd9;
     border-radius: 8px;
-    background-image: linear-gradient(0deg, #0072ff 0%, #4095fd 100%);
+    background: #568fd9;
 }
 .installbtn2{
-    background: #3089fe;
+    /* background: #3089fe; */
+    background: #568fd9;
     padding: 6px 18px;
     font-size: 16px;
     color: #fff;
-    border: 1px solid #3089fe;
+    border: 1px solid #568fd9;
     border-radius: 8px;
 }
 .installbtn3{
-    background: #3089fe;
+    background: #568fd9;
     padding: 5px;
     font-size: 15px;
-    border: 1px solid #3089fe;
+    border: 1px solid #568fd9;
     border-radius: 8px;
     color: #fff;
+}
+.installbtn:hover, .installbtn2:hover, .installbtn3:hover, .visitbtn:hover{
+    background: #3089fe;
+    border: 1px solid #3089fe;
 }
 
 #bgwhite .carousel-inner .carousel-item img{
@@ -338,7 +353,12 @@ a{
 .show {
     opacity:1;
 }
-
+.navPosFix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
 #posrel{
     transform: none;
 }
@@ -398,18 +418,20 @@ hr{
 
 .owl-carousel .owl-dot.active {
     background-color: red;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
-
+.bg-blue .owl-carousel button.owl-dot{
+    background: #fff;
+}
 .owl-carousel button.owl-dot {
     color: inherit;
     border: 1px solid grey;
-    width: 15px;
+    width: 12px;
     padding: 0px !important;
     margin: 16px 1px;
     font: inherit;
-    height: 15px;
+    height: 12px;
     border-radius: 50%;
     background: royalblue;
 }
@@ -418,9 +440,14 @@ hr{
 }
 
 .owl-carousel .owl-dot.active{
-    background-color: #000;
+    background-color: royalblue;
+    position: relative;
+    top: 2px;
+    opacity: 100%;
 }
-
+.owl-carousel .owl-dot{
+    opacity: 50%;
+}
 #rs{
     font-family: 'Bebas Neue', cursive;
     font-size: 22px;
@@ -514,8 +541,8 @@ h4 .smtext{
     color: #fff;
 }
 .borderTopRadius100{
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .2); /* Smooth shadow effect */
 }
 
@@ -584,9 +611,9 @@ h4 .smtext{
     padding: 6px;
     font-size: 14px !important;
     color: #fff;
-    border: 1px solid #3089fe;
+    border: 1px solid #568fd9;
     border-radius: 10px;
-    background-image: linear-gradient(0deg, #0072ff 0%, #4095fd 100%);
+    background: #568fd9;
 }
 .casinoHead2{
     color: #0072ff;
@@ -600,4 +627,19 @@ h4 .smtext{
 .boxShadow0{
     box-shadow: none;
 }
+.posabsSearch{
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: royalblue;
+}
 
+/* FAQ */
+#faqBtn{
+    cursor: pointer;
+}
+#faqSect{
+    display: none;
+}
