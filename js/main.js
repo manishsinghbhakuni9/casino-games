@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   owl13.owlCarousel({
     loop:true,
-    margin:10,
+    margin:15,
     autoplay: true,
     nav:true,
     items: 1,
@@ -23,8 +23,9 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-          items:2,
-          nav:true
+        items:2,
+        nav:false,
+        dots: true
       },
       300:{
         items:2,
@@ -53,7 +54,8 @@ $(document).ready(function(){
     responsive:{
       0:{
           items:3,
-          nav:true
+          nav:false,
+          dots: true
       },
       300:{
         items:2,
@@ -81,8 +83,9 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-          items:3,
-          nav:true
+        items:3,
+        nav:false,
+        dots: true
       },
       300:{
         items:2,
@@ -109,8 +112,9 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-          items:2,
-          nav:true
+        items:2,
+        nav:false,
+        dots: true
       },
       600:{
           items:3,
@@ -134,8 +138,9 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-          items:2,
-          nav:true
+        items:2,
+        nav:false,
+        dots: true
       },
       600:{
           items:3,
@@ -158,8 +163,9 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-          items:2,
-          nav:true
+        items:2,
+        nav:false,
+        dots: true
       },
       600:{
           items:3,
@@ -191,8 +197,9 @@ $(document).ready(function(){
     arrows:false,
     responsive:{
       0:{
-          items:1,
-          nav:true
+        items:4,
+        nav:false,
+        dots: true
       },
       600:{
           items:3,
@@ -209,14 +216,15 @@ $(document).ready(function(){
     loop:true,
     margin:10,
     autoplay: true,
-    nav:true,
+    nav:false,
     items: 1,
     dots: false,
     arrows:true,
     responsive:{
       0:{
           items:2,
-          nav:true
+          nav:false,
+          dots: true
       },
       600:{
           items:3,
@@ -241,7 +249,8 @@ $(document).ready(function(){
     responsive:{
       0:{
           items:2,
-          nav:true,
+          nav:false,
+          dots: true,
           margin:5,
       },
       600:{
@@ -257,7 +266,7 @@ $(document).ready(function(){
   });
   owl3.owlCarousel({
     loop:true,
-    margin:8,
+    margin:10,
     autoplay: true,
     nav:true,
     items: 1,
@@ -265,8 +274,9 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-          items:3,
-          nav:true
+        items:3,
+        nav:false,
+        dots: true
       },
       600:{
           items:3,
@@ -282,13 +292,20 @@ $(document).ready(function(){
   owl2.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:false,
-    items: 2.2,
+    items: 1,
     dots: false,
     arrows:false,
     center: true, // Enable centering
-    stagePadding: 20
+    stagePadding: 0,
+    responsive:{
+      0:{
+        items:1,
+        nav:false,
+        dots: false
+      }
+  } 
   });
 
   owl.owlCarousel({
@@ -299,6 +316,13 @@ $(document).ready(function(){
     items: 1,
     arrows:false, 
     dots: false,
+    responsive:{
+      0:{
+        items:3,
+        nav:false,
+        dots: true
+      }
+  } 
   });
   // Custom Button
   $('.customNextBtn').click(function() {
@@ -325,17 +349,33 @@ $(document).ready(function(){
 //     contentsect2.style.display = "none";
 // }
 
-// navsect2 = document.getElementById("navsect2");
+navsect = document.getElementById("scrollNav");
 
-// var myScrollFunc = function () {
-//     var y = window.scrollY;
-//     if (y >= 600) {
-//         navsect2.className = "navsectfooter show"
-//     } else {
-//         navsect2.className = "navsectfooter hide"
-//     }
-// };
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 2) {
+      navsect.className = "navPosFix show borderBottomRadius100"
+    } else {
+      navsect.className = ""
+    }
+};
 
-// window.addEventListener("scroll", myScrollFunc);
+window.addEventListener("scroll", myScrollFunc);
 
 
+let faqBtn = document.querySelector("#faqBtn");
+let faqSect = document.querySelector("#faqSect");
+let faqIcon = document.querySelector("#faqIcon");
+
+faqBtn.addEventListener("click", ()=>{
+
+  if (faqSect.style.display === "block") {
+    faqSect.style.display = "none";
+    faqIcon.classList.remove("fa-angle-up");
+    faqIcon.classList.add("fa-angle-down");
+  } else {
+    faqSect.style.display = "block";
+    faqIcon.classList.add("fa-angle-up");
+    faqIcon.classList.remove("fa-angle-down");
+  }
+})
