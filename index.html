@@ -18,40 +18,46 @@
    </head>
    <body>
       <!--logo-->
-      <section id="navsect" class="pt-3">
-         <nav class="navbar navbar-expand">
-            <div class="container">
-               <a class="navbar-brand " href="index.html"><img src="img/Logo.png" class="w-75" /></a>
-               <div>
-                  <ul class="navbar-nav">
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                     </li>
-                  </ul>
+      <section id="navsect" class="pt-3 borderBottomRadius100">
+         <div class="" id="scrollNav">
+            <nav class="navbar navbar-expand-md ">
+               <div class="container">
+                  <a class="navbar-brand " href="index.html"><img src="img/Logo.png" class="w-100" /></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                     <span class="fas fa-bars text-white bars"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Register</a>
+                        </li>
+                     </ul>
+                  </div>
                </div>
-            </div>
-         </nav>
-         <!--Navbar search section-->
-         <div class="py-3">
-            <div class="container">
-               <div class="row  justify-content-center">
-                  <div class="col-9 col-md-7 col-lg-5 col-xl-5 col-xxl-5">
-                     <span class="posrelative inputWdImage">
-                     <input type="text" placeholder="Lorem Ipsum" alt="" class="w-100 posrel"/>
-                     <img src="img/bars.png" class="posabsoluteInput" alt=""/>
-                     </span>
+            </nav>
+            <!--Navbar search section-->
+            <div class="py-4 py-md-4 py-lg-4 py-xl-4 py-xxl-4">
+               <div class="container">
+                  <div class="row  justify-content-center">
+                     <div class="col-9 col-md-7 col-lg-5 col-xl-5 col-xxl-5">
+                        <span class="posrelative inputWdImage">
+                        <input type="text" placeholder="Lorem Ipsum" alt="" class="w-100 posrel"/>
+                        <i class="fas fa-search  posabsSearch"></i>
+                        <img src="img/bars.png" class="posabsoluteInput" alt=""/>
+                        </span>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
          <!--Games section-->
-         <div class="pt-3 pb-5" id="#gamesection">
+         <div class="pt-3 pb-3 pb-md-5 pd-lg-5 pd-xl-5 pd-xxl-5" id="#gamesection">
             <div class="container">
                <div class="row align-items-center justify-content-center">
                   <div class="col-12 col-md-12 col-lg-9 col-xl-8 col-xxl-9">
@@ -67,31 +73,31 @@
                               </div>
                               <div class="col-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                                  <div class="boxWhite text-center py-1 px-3">
-                                    <img src="img/home/bonuses.png" alt="Casino"  class="img"/>
+                                    <img src="img/home/casino.png" alt="Casino"  class="img"/>
                                     <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Bonuses</p>
                                  </div>
                               </div>
                               <div class="col-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                                  <div class="boxWhite text-center py-1 px-3">
-                                    <img src="img/home/free-games.png" alt="" class="img3" />
-                                    <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Free <br/> Games</p>
+                                    <img src="img/home/casino.png" alt="" class="img" />
+                                    <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Free Games</p>
                                  </div>
                               </div>
                               <div class="col-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                                  <div class="boxWhite text-center py-1 px-3">
-                                    <img src="img/home/table-game.png" alt="" class="img4"/>
-                                    <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Table<br/> Games</p>
+                                    <img src="img/home/casino.png" alt="" class="img"/>
+                                    <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Table Games</p>
                                  </div>
                               </div>
                               <div class="col-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                                  <div class="boxWhite text-center py-1 px-3">
-                                    <img src="img/home/slots.png" alt=""   class="img5"/>
+                                    <img src="img/home/casino.png" alt=""   class="img"/>
                                     <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Slots</p>
                                  </div>
                               </div>
                               <div class="col-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                                  <div class="boxWhite text-center py-1 px-3">
-                                    <img src="img/home/news.png" alt=""  class="img5" />
+                                    <img src="img/home/casino.png" alt=""  class="img" />
                                     <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">News</p>
                                  </div>
                               </div>
@@ -102,63 +108,39 @@
                      <div class="d-block d-md-none d-lg-none d-xl-none" id="mobGames">
                         <div class="owl-carousel owl-themecarousel">
                            <div class="item">
-                              <div class="container">
-                                 <div class="row justify-content-center align-items-end">
-                                    <div class="col-3">
-                                       <div class="boxWhite text-center py-1 px-3">
-                                          <img src="img/home/casino.png" alt="Casino"  class="w-100"/>
-                                          <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Casino</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-3">
-                                       <div class="boxWhite text-center py-1 px-3">
-                                          <img src="img/home/bonuses.png" alt="Casino"  class="w-100"/>
-                                          <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Bonuses</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-3">
-                                       <div class="boxWhite text-center py-1 px-3">
-                                          <img src="img/home/free-games.png" alt="" class="w-100" />
-                                          <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Free <br/> Games</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-3">
-                                       <div class="boxWhite text-center py-1 px-3">
-                                          <img src="img/home/table-game.png" alt="" class="w-100"/>
-                                          <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Table<br/> Games</p>
-                                       </div>
-                                    </div>
-                                 </div>
+                              <div class="boxWhite text-center py-1 px-3">
+                                 <img src="img/home/casino.png" alt="Casino"  class="w-75"/>
+                                 <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Casino</p>
                               </div>
                            </div>
                            <div class="item">
-                              <div class="container">
-                                 <div class="row justify-content-center align-items-end">
-                                    <div class="col-3">
-                                       <div class="boxWhite text-center py-1 px-3">
-                                          <img src="img/home/casino.png" alt="Casino"  class="w-100"/>
-                                          <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Casino</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-3">
-                                       <div class="boxWhite text-center py-1 px-3">
-                                          <img src="img/home/bonuses.png" alt="Casino"  class="w-100"/>
-                                          <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Bonuses</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-3">
-                                       <div class="boxWhite text-center py-1 px-3">
-                                          <img src="img/home/free-games.png" alt="" class="w-100" />
-                                          <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Free <br/> Games</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-3">
-                                       <div class="boxWhite text-center py-1 px-3">
-                                          <img src="img/home/table-game.png" alt="" class="w-100"/>
-                                          <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Table<br/> Games</p>
-                                       </div>
-                                    </div>
-                                 </div>
+                              <div class="boxWhite text-center py-1 px-3">
+                                 <img src="img/home/casino.png" alt="Casino"  class="w-75"/>
+                                 <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Bonuses</p>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="boxWhite text-center py-1 px-3">
+                                 <img src="img/home/casino.png" alt="Casino"  class="w-75"/>
+                                 <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Free Games</p>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="boxWhite text-center py-1 px-3">
+                                 <img src="img/home/casino.png" alt="Casino"  class="w-75"/>
+                                 <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Table Games</p>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="boxWhite text-center py-1 px-3">
+                                 <img src="img/home/casino.png" alt="Casino"  class="w-75"/>
+                                 <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">Slots</p>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="boxWhite text-center py-1 px-3">
+                                 <img src="img/home/casino.png" alt="Casino"  class="w-75"/>
+                                 <p class="coloraccsite fontWeight400 pt-2 smtext mb-0">News</p>
                               </div>
                            </div>
                         </div>
@@ -170,7 +152,7 @@
       </section>
       <section id="">
          <!-- carousel -->
-         <div class="pt-3" id="arrowcarousel">
+         <div class="pt-5" id="arrowcarousel">
             <div class="container">
                <div class="owl-carousel owl-themecarousel">
                   <div class="item">
@@ -192,12 +174,12 @@
          <div class="pt-5 pb-5">
             <div class="text-center">
                <h2 class="casinoHead">CASINOS</h2>
-               <p class="text-gray">Explore the best, safest, and most thrilling casinos!</p>
+               <p class="text-gray text-uppercase">Explore the best, safest, and most thrilling casinos!</p>
             </div>
             <div class="" id="gamesection">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
+                        <div class="col-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10">
                             <div class="container">
                                 <div class="owl-carousel owl-themecarousel">
                                     <div class="item">
@@ -310,7 +292,7 @@
 
       <!-- Bonus Cards -->
       <section>
-         <div class="py-5">
+         <div class="py-3">
             <div class="text-center">
                <h2 class="casinoHead">BONUSES</h2>
                <p class="text-gray">Exclusive deals and bonuses to boost your winnings!</p>
@@ -1014,7 +996,7 @@
                            </div>
                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-2">
                               <img src="img/footer_logo.png" class="w-75" alt=""/>
-                              <p class="text-white">Trusted Gamblers is world’s leading platform that rates every casino with a TG Score and provides players with exclusive bonuses, online casino reviews, tips and more to level up the game.</p>
+                              <p class="text-white mt-4">Trusted Gamblers is world’s leading platform that rates every casino with a TG Score and provides players with exclusive bonuses, online casino reviews, tips and more to level up the game.</p>
                            </div>
                         </div>
                      </div>

@@ -19,24 +19,43 @@
    <body >
       <!--logo-->
       <section id="navsect" class="pt-3 py-4 borderBottomRadius100">
-         <nav class="navbar navbar-expand">
-            <div class="container">
-               <a class="navbar-brand " href="index.html"><img src="img/Logo.png" class="w-75" /></a>
-               <div>
-                  <ul class="navbar-nav">
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                     </li>
-                  </ul>
+         <div class="" id="scrollNav">
+            <nav class="navbar navbar-expand-md">
+               <div class="container">
+                  <a class="navbar-brand " href="index.html"><img src="img/Logo.png" class="w-100" /></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                     <span class="fas fa-bars text-white bars"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Register</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <!--Navbar search section-->
+            <div class="py-4 py-md-4 py-lg-4 py-xl-4 py-xxl-4">
+               <div class="container">
+                  <div class="row  justify-content-center">
+                     <div class="col-9 col-md-7 col-lg-5 col-xl-5 col-xxl-5">
+                        <span class="posrelative inputWdImage">
+                        <input type="text" placeholder="Lorem Ipsum" alt="" class="w-100 posrel"/>
+                        <i class="fas fa-search  posabsSearch"></i>
+                        <img src="img/bars.png" class="posabsoluteInput" alt=""/>
+                        </span>
+                     </div>
+                  </div>
                </div>
             </div>
-         </nav>
+         </div>
       </section>
       <!-- Bonus Guide -->
       <section id="">
@@ -70,12 +89,13 @@
             </div>
 
             <!--Bonus search section-->
-            <div class="py-3">
+            <div class="py-4 py-md-4 py-lg-4 py-xl-4 py-xxl-4">
                <div class="container">
                   <div class="row  justify-content-center">
                      <div class="col-9 col-md-7 col-lg-5 col-xl-5 col-xxl-5">
                         <span class="posrelative inputWdImage">
                         <input type="text" placeholder="SEARCH SLOTS" alt="" class="w-100 posrel"/>
+                        <i class="fas fa-search  posabsSearch"></i>
                         <img src="img/bars.png" class="posabsoluteInput" alt=""/>
                         </span>
                      </div>
@@ -543,28 +563,31 @@
          </div>
       </section>
 
-      <!-- Bonus Guide -->
+      <!-- FAQ -->
       <section id="">
-         <div class="py-4" >
+         <div class="py-3" >
             <div class="container">
                <div class="row justify-content-center">
                   <div class="col-12 col-md-11 col-lg-11 col-xl-8 col-xxl-8">
                      <div>
-                        <h2 class="text-center coloraccsite pt-5 pb-2 fontWeight700">FAQ <i class="fa-solid fa-angle-up"></i></h2>
-                        <p class="coloraccsite fontWeight500">Our database offers a broad range of online casinos suitable for every type of player. Whether you are a new player or a seasoned punter, our collection of online casinos will come in handy, and we'll help you narrow down your search.</p>
-                        <h4 class="light_dark">Browsing the Best Online Casinos</h4>
-                        <p class="coloraccsite fontWeight500">Online casinos are exactly what their name suggests: gambling venues on the internet that offer the same types of games as their brick-and-mortar counterparts, plus the convenience of being available anywhere, anytime.</p>
-                        <p class="coloraccsite fontWeight500">Given the vastness of the online casino world, knowing where to look and what to pay attention to is essential. There are multiple parameters you should consider before picking the right place, and AskGamblers can point you in the right direction. </p>
-                        <p class="coloraccsite fontWeight500">Whether you are looking for brand new casinos or wish to know what the top 10 casinos at the moment are, our databases come equally handy. 
-                        </p>
-
-                        <h4 class="light_dark">Choosing the Best Online Casino</h4>
-                        <p class="coloraccsite fontWeight500">The question stands: are the most popular online casinos really the best casinos for you? And how can you determine whether popular online casinos will really check all the right boxes? By having as much information on online casinos as possible.
-                        </p>
-                        <p class="coloraccsite fontWeight500">There are dozens of parameters to consider when choosing an online casino, but luckily AskGamblers is here to do the legwork for you. From territorial availability to software platforms, bonus requirements, customer service availability, and numerous other relevant factors, you can find all the necessary info in one place.
-                        </p>
-                        <p class="coloraccsite fontWeight500">To break up the process of choosing the best online casino, take a look at our 4-step guide to finding the right real money casino:
-                        </p>
+                        <h2 class="text-center coloraccsite pt-5 pb-2 fontWeight700" id="faqBtn">FAQ <i class="fa-solid fa-angle-down" id="faqIcon"></i></h2>
+                        <div class="" id="faqSect">
+                           <p class="coloraccsite fontWeight500">Our database offers a broad range of online casinos suitable for every type of player. Whether you are a new player or a seasoned punter, our collection of online casinos will come in handy, and we'll help you narrow down your search.</p>
+                           <h4 class="light_dark">Browsing the Best Online Casinos</h4>
+                           <p class="coloraccsite fontWeight500">Online casinos are exactly what their name suggests: gambling venues on the internet that offer the same types of games as their brick-and-mortar counterparts, plus the convenience of being available anywhere, anytime.</p>
+                           <p class="coloraccsite fontWeight500">Given the vastness of the online casino world, knowing where to look and what to pay attention to is essential. There are multiple parameters you should consider before picking the right place, and AskGamblers can point you in the right direction. </p>
+                           <p class="coloraccsite fontWeight500">Whether you are looking for brand new casinos or wish to know what the top 10 casinos at the moment are, our databases come equally handy. 
+                           </p>
+   
+                           <h4 class="light_dark">Choosing the Best Online Casino</h4>
+                           <p class="coloraccsite fontWeight500">The question stands: are the most popular online casinos really the best casinos for you? And how can you determine whether popular online casinos will really check all the right boxes? By having as much information on online casinos as possible.
+                           </p>
+                           <p class="coloraccsite fontWeight500">There are dozens of parameters to consider when choosing an online casino, but luckily AskGamblers is here to do the legwork for you. From territorial availability to software platforms, bonus requirements, customer service availability, and numerous other relevant factors, you can find all the necessary info in one place.
+                           </p>
+                           <p class="coloraccsite fontWeight500">To break up the process of choosing the best online casino, take a look at our 4-step guide to finding the right real money casino:
+                           </p>
+                        </div>
+                        
                      </div>
                   </div>
                </div>
@@ -629,7 +652,7 @@
                            </div>
                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-2">
                               <img src="img/footer_logo.png" class="w-75" alt=""/>
-                              <p class="text-white">Trusted Gamblers is world’s leading platform that rates every casino with a TG Score and provides players with exclusive bonuses, online casino reviews, tips and more to level up the game.</p>
+                              <p class="text-white mt-4">Trusted Gamblers is world’s leading platform that rates every casino with a TG Score and provides players with exclusive bonuses, online casino reviews, tips and more to level up the game.</p>
                            </div>
                         </div>
                      </div>
