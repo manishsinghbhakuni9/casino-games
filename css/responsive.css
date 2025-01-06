@@ -24,7 +24,7 @@
         box-shadow: 0 5px 7px 1px rgba(0, 0, 0, .3); /* Smooth shadow effect */
     }
     
-    .borderBottomRadius100,#scrollNav{
+    .borderBottomRadius100{
         border-bottom-left-radius: 45px;
         border-bottom-right-radius: 45px;
         box-shadow: 0 5px 7px 1px rgba(0, 0, 0, .3); /* Smooth shadow effect */
