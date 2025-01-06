@@ -16,7 +16,7 @@ $(document).ready(function(){
   owl13.owlCarousel({
     loop:true,
     margin:15,
-    autoplay: true,
+    autoplay: false,
     nav:true,
     items: 1,
     dots: false,
@@ -42,11 +42,10 @@ $(document).ready(function(){
       }
     }
   });
-  
   owl12.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:true,
     items: 1,
     dots: false,
@@ -72,11 +71,10 @@ $(document).ready(function(){
       }
     }
   });
-
   owl11.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:true,
     items: 1,
     dots: false,
@@ -105,7 +103,7 @@ $(document).ready(function(){
   owl10.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:true,
     items: 1,
     dots: false,
@@ -127,11 +125,10 @@ $(document).ready(function(){
       }
     }
   });
-
   owl9.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:true,
     items: 1,
     dots: false,
@@ -156,7 +153,7 @@ $(document).ready(function(){
   owl8.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:true,
     items: 1,
     dots: false,
@@ -181,7 +178,7 @@ $(document).ready(function(){
   owl7.owlCarousel({
     loop:true,
     margin:2,
-    autoplay: true,
+    autoplay: false,
     nav:false,
     items: 2,
     dots: false,
@@ -190,7 +187,7 @@ $(document).ready(function(){
   owl6.owlCarousel({
     loop:true,
     margin:2,
-    autoplay: true,
+    autoplay: false,
     nav:false,
     items: 4,
     dots: false,
@@ -215,7 +212,7 @@ $(document).ready(function(){
   owl5.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:false,
     items: 1,
     dots: false,
@@ -237,11 +234,10 @@ $(document).ready(function(){
       }
     }
   });
-
   owl4.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:true,
     items: 1,
     dots: false,
@@ -267,7 +263,7 @@ $(document).ready(function(){
   owl3.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:true,
     items: 1,
     dots: false,
@@ -292,7 +288,7 @@ $(document).ready(function(){
   owl2.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: false,
+    autoplay: true,
     nav:false,
     items: 1,
     dots: false,
@@ -307,11 +303,10 @@ $(document).ready(function(){
       }
   } 
   });
-
   owl.owlCarousel({
     loop:true,
     margin:10,
-    autoplay: true,
+    autoplay: false,
     nav:false,
     items: 1,
     arrows:false, 
@@ -324,6 +319,7 @@ $(document).ready(function(){
       }
   } 
   });
+
   // Custom Button
   $('.customNextBtn').click(function() {
     owl.trigger('next.owl.carousel');
