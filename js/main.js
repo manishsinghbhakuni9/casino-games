@@ -358,6 +358,170 @@ var myScrollFunc = function () {
 
 window.addEventListener("scroll", myScrollFunc);
 
+const how_we_rate = document.querySelector('#ratingsss');
+if(how_we_rate){
+const licenseClick = document.querySelector("#licenseClick");
+const licenseText = document.querySelector("#licenseText");
+
+const gameClick = document.querySelector("#gameClick");
+const gameText = document.querySelector("#gameText");
+
+const bonusClick = document.querySelector("#bonusClick");
+const bonusText = document.querySelector("#bonusText");
+
+const uiClick = document.querySelector("#uiClick");
+const uiText = document.querySelector("#uiText");
+
+const paymentClick = document.querySelector("#paymentClick");
+const paymentText = document.querySelector("#paymentText");
+
+const securityClick = document.querySelector("#securityClick");
+const securityText = document.querySelector("#securityText");
+
+const customerClick = document.querySelector("#customerClick");
+const customerText = document.querySelector("#customerText");
+
+const tournamentClick = document.querySelector("#tournamentClick");
+const tournamentText = document.querySelector("#tournamentText");
+
+const vipClick = document.querySelector("#vipClick");
+const vipText = document.querySelector("#vipText");
+
+const responsibleClick = document.querySelector("#responsibleClick");
+const responsibleText = document.querySelector("#responsibleText");
+
+licenseClick.addEventListener("click", ()=>{
+  licenseText.style.display="block";
+  gameText.style.display="none";
+  bonusText.style.display="none";
+  uiText.style.display="none";
+  paymentText.style.display="none";
+  securityText.style.display="none";
+  customerText.style.display="none";
+  tournamentText.style.display="none";
+  vipText.style.display="none";
+  responsibleText.style.display="none";
+});
+
+gameClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="block";
+  bonusText.style.display="none";
+  uiText.style.display="none";
+  paymentText.style.display="none";
+  securityText.style.display="none";
+  customerText.style.display="none";
+  tournamentText.style.display="none";
+  vipText.style.display="none";
+  responsibleText.style.display="none";
+});
+
+bonusClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="none";
+  bonusText.style.display="block";
+  uiText.style.display="none";
+  paymentText.style.display="none";
+  securityText.style.display="none";
+  customerText.style.display="none";
+  tournamentText.style.display="none";
+  vipText.style.display="none";
+  responsibleText.style.display="none";
+});
+
+uiClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="none";
+  bonusText.style.display="none";
+  uiText.style.display="block";
+  paymentText.style.display="none";
+  securityText.style.display="none";
+  customerText.style.display="none";
+  tournamentText.style.display="none";
+  vipText.style.display="none";
+  responsibleText.style.display="none";
+});
+
+paymentClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="none";
+  bonusText.style.display="none";
+  uiText.style.display="none";
+  paymentText.style.display="block";
+  securityText.style.display="none";
+  customerText.style.display="none";
+  tournamentText.style.display="none";
+  vipText.style.display="none";
+  responsibleText.style.display="none";
+});
+
+securityClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="none";
+  bonusText.style.display="none";
+  uiText.style.display="none";
+  paymentText.style.display="none";
+  securityText.style.display="block";
+  customerText.style.display="none";
+  tournamentText.style.display="none";
+  vipText.style.display="none";
+  responsibleText.style.display="none";
+});
+
+customerClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="none";
+  bonusText.style.display="none";
+  uiText.style.display="none";
+  paymentText.style.display="none";
+  securityText.style.display="none";
+  customerText.style.display="block";
+  tournamentText.style.display="none";
+  vipText.style.display="none";
+  responsibleText.style.display="none";
+});
+
+tournamentClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="none";
+  bonusText.style.display="none";
+  uiText.style.display="none";
+  paymentText.style.display="none";
+  securityText.style.display="none";
+  customerText.style.display="none";
+  tournamentText.style.display="block";
+  vipText.style.display="none";
+  responsibleText.style.display="none";
+});
+
+vipClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="none";
+  bonusText.style.display="none";
+  uiText.style.display="none";
+  paymentText.style.display="none";
+  securityText.style.display="none";
+  customerText.style.display="none";
+  tournamentText.style.display="none";
+  vipText.style.display="block";
+  responsibleText.style.display="none";
+});
+
+responsibleClick.addEventListener("click", ()=>{
+  licenseText.style.display="none";
+  gameText.style.display="none";
+  bonusText.style.display="none";
+  uiText.style.display="none";
+  paymentText.style.display="none";
+  securityText.style.display="none";
+  customerText.style.display="none";
+  tournamentText.style.display="none";
+  vipText.style.display="none";
+  responsibleText.style.display="block";
+});
+
+}
+
 
 let faqBtn = document.querySelector("#faqBtn");
 let faqSect = document.querySelector("#faqSect");
@@ -375,3 +539,6 @@ faqBtn.addEventListener("click", ()=>{
     faqIcon.classList.remove("fa-angle-down");
   }
 })
+
+
+
