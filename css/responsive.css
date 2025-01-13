@@ -3,7 +3,11 @@
         border-radius: 20px;
     }
     .bgg{
-        padding: 14%;
+        background-image: url("../img/testbanner_mob.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 20%;
     }
     #rate h4{
         font-size: 14px;
