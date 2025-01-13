@@ -262,7 +262,7 @@ $(document).ready(function(){
   });
   owl3.owlCarousel({
     loop:true,
-    margin:10,
+    margin:3,
     autoplay: false,
     nav:true,
     items: 1,
@@ -270,7 +270,7 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-        items:3,
+        items:2.4,
         nav:false,
         dots: true
       },
