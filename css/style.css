@@ -193,9 +193,9 @@ a{
   .img5{
     width:68px;
   }
-  .height300{
-    height: 200px;
-  }
+  /* .height300{
+    height: 300px;
+  } */
   /* Ensure the text aligns consistently */
   .boxWhite p {
     margin-top: auto; /* Push the text down within the white box */
@@ -743,4 +743,15 @@ color:#fec741;
 #rate p{
     color: #fff;
     margin-bottom: 0;
+}
+
+.bgg{
+    background-image: url("../img/testbanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+}
+.borderRadiusCarousel{
+    border-radius: 40px;
 }

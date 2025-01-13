@@ -1,4 +1,7 @@
 @media screen and (max-width: 506px) {
+    .borderRadiusCarousel{
+        border-radius: 20px;
+    }
     #rate h4{
         font-size: 14px;
     }
