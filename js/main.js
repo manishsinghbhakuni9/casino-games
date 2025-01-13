@@ -344,22 +344,25 @@ $(document).ready(function(){
 //     readmore.style.display = "block";
 //     contentsect2.style.display = "none";
 // }
+const review = document.querySelector('#review');
+if(!review){
 
-navsect = document.getElementById("scrollNav");
-
-var myScrollFunc = function () {
-    var y = window.scrollY;
-    if (y >= 2) {
-      navsect.className = "navPosFix show borderBottomRadius100"
-    } else {
-      navsect.className = ""
-    }
-};
+  navsect = document.getElementById("scrollNav");
+  
+  var myScrollFunc = function () {
+      var y = window.scrollY;
+      if (y >= 2) {
+        navsect.className = "navPosFix show borderBottomRadius100"
+      } else {
+        navsect.className = ""
+      }
+  };
+}
 
 window.addEventListener("scroll", myScrollFunc);
 
 const how_we_rate = document.querySelector('#ratingsss');
-if(how_we_rate){
+if(how_we_rate || review){
 const licenseClick = document.querySelector("#licenseClick");
 const licenseText = document.querySelector("#licenseText");
 
@@ -522,23 +525,24 @@ responsibleClick.addEventListener("click", ()=>{
 
 }
 
-
-let faqBtn = document.querySelector("#faqBtn");
-let faqSect = document.querySelector("#faqSect");
-let faqIcon = document.querySelector("#faqIcon");
-
-faqBtn.addEventListener("click", ()=>{
-
-  if (faqSect.style.display === "block") {
-    faqSect.style.display = "none";
-    faqIcon.classList.remove("fa-angle-up");
-    faqIcon.classList.add("fa-angle-down");
-  } else {
-    faqSect.style.display = "block";
-    faqIcon.classList.add("fa-angle-up");
-    faqIcon.classList.remove("fa-angle-down");
-  }
-})
+if(!review){
+  let faqBtn = document.querySelector("#faqBtn");
+  let faqSect = document.querySelector("#faqSect");
+  let faqIcon = document.querySelector("#faqIcon");
+  
+  faqBtn.addEventListener("click", ()=>{
+  
+    if (faqSect.style.display === "block") {
+      faqSect.style.display = "none";
+      faqIcon.classList.remove("fa-angle-up");
+      faqIcon.classList.add("fa-angle-down");
+    } else {
+      faqSect.style.display = "block";
+      faqIcon.classList.add("fa-angle-up");
+      faqIcon.classList.remove("fa-angle-down");
+    }
+  })
+}
 
 
 
