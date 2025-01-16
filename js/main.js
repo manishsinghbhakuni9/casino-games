@@ -102,7 +102,7 @@ $(document).ready(function(){
   });
   owl10.owlCarousel({
     loop:true,
-    margin:10,
+    margin:7,
     autoplay: false,
     nav:true,
     items: 1,
@@ -110,7 +110,7 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-        items:2,
+        items:1,
         nav:false,
         dots: true
       },
