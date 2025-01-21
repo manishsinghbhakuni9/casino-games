@@ -2,6 +2,9 @@
     .borderRadiusCarousel{
         border-radius: 20px;
     }
+    .width75{
+        width: 100%;
+    }
     .bgg{
         background-image: url("../img/testbanner_mob.jpeg");
         background-repeat: no-repeat;
@@ -70,7 +73,7 @@
         font-size: 14px;
     }
     .smtext {
-        font-size: 9.5px;
+        font-size: 11.5px;
     }
     .casinoHead{
         font-size: 25px;
@@ -107,8 +110,7 @@
 
     .installbtn2 {
         font-size: 14px;
-        width: 100%;
-        padding: 5px;
+        padding: 5px 15px;
     }
     .installbtn3{
         font-size: 12px;
