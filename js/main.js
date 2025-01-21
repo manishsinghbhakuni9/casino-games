@@ -110,7 +110,7 @@ $(document).ready(function(){
     arrows:true,
     responsive:{
       0:{
-        items:1,
+        items:2,
         nav:false,
         dots: true
       },
@@ -281,7 +281,7 @@ $(document).ready(function(){
       1000:{
           items:6,
           nav:true,
-          loop:true
+          loop:true,
       }
   }
   });
@@ -328,26 +328,10 @@ $(document).ready(function(){
     owl.trigger('prev.owl.carousel');
   });
 }); 
-
-
-// function readmore(){
-//     let readmore = document.querySelector("#readmore");
-//     let readless = document.querySelector("#readless");
-//     let contentsect2 = document.querySelector("#contentsect2");
-//     readmore.style.display = "none";
-//     contentsect2.style.display = "block";
-// }
-// function readless(){
-//     let readmore = document.querySelector("#readmore");
-//     let readless = document.querySelector("#readless");
-//     let contentsect2 = document.querySelector("#contentsect2");
-//     readmore.style.display = "block";
-//     contentsect2.style.display = "none";
-// }
 const review = document.querySelector('#review');
 if(!review){
 
-  navsect = document.getElementById("scrollNav");
+  const navsect = document.getElementById("scrollNav");
   
   var myScrollFunc = function () {
       var y = window.scrollY;
