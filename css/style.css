@@ -17,9 +17,6 @@ img{
 a{
     text-decoration: none;
 }
-a:hover{
-    color: #f9c61a !important;
-}
 /* typography */
 .fontWeight700{
     font-weight: 700;
@@ -35,16 +32,16 @@ a:hover{
     font-weight: 500;
 }
 .smtext{
-    font-size: 0.93rem;
+    font-size: 12px;
 }
 .smtext2{
-    font-size: 8px;
+    font-size: 12px;
 }
 .smtext3{
-    font-size: 10px;
+    font-size: 11px;
 }
 .smtext4{
-    font-size: 8px !important; 
+    font-size: 11px !important; 
 }
 .bg-greyhere{
     background: #f0f0f0;
@@ -57,11 +54,11 @@ a:hover{
     color: #4a4a4a;
 }
 p{
-    font-size: 1.09rem;
+    font-size: 18px;
     color: #676e7c;
 }
 .headplay{
-    font-size: 1.45rem;
+    font-size: 1.95rem;
 }
 
 .fonthead{
@@ -107,6 +104,9 @@ p{
     margin-right: 6px;
     font-size: 15px;
 }
+#navsect ul li a:hover{
+    color: #fec741;
+}
 #navsect ul li a.active{
     color: #fec741;
 }
@@ -126,7 +126,7 @@ p{
     font-weight: 400;
     text-overflow: ellipsis;
 }
-#navsect input, #bonusInput input, #expertReviews input, #bannerBg input{
+#navsect input, #bonusInput input, #expertReviews input{
     border-radius: 52px;
     border: 1px solid #efefef;
     padding: 15px 0 15px 45px;
@@ -184,22 +184,23 @@ a{
     white-space: nowrap;
 }
 .gamesSection .boxWhite:hover{
-    background: lightcyan;
-    color: #fff;
+    background: transparent;
     border-radius: 18px;
     border: 1px solid #fff;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .2);
 }
+.gamesSection .boxWhite:hover>p{
+    color: #fff;
+}
 /* .boxWhite h4{
     font-size: 18px;
 } */
-.boxWhite img{
-    /* width: 60px; */
+.gamesSection .boxWhite img{
+    width: 75%;
     height: 100%; 
     padding: 5px; 
 
 }
-
 /* Ensure all .boxWhite elements have equal height */
 .boxWhite {
     display: flex;
@@ -466,11 +467,6 @@ hr{
     height: 100%;
 }
 
-.owl-carousel .owl-dot.active {
-    background-color: red;
-    width: 16px;
-    height: 16px;
-}
 .bg-blue .owl-carousel button.owl-dot{
     background: #fff;
 }
@@ -491,8 +487,6 @@ hr{
 
 .owl-carousel .owl-dot.active{
     background-color: royalblue;
-    position: relative;
-    top: 2px;
     opacity: 100%;
 }
 .owl-carousel .owl-dot{
@@ -581,7 +575,7 @@ h4 .smtext{
     font-size: 16px;
 }
 .news p{
-    font-size: 12px;
+    font-size: 13px;
 }
 .footerlinks {
     list-style: none;
@@ -589,6 +583,17 @@ h4 .smtext{
 }
 #footer .footerlinks li a{
     color: #fff;
+}
+
+#footer .footerlinks li a:hover{
+    color: #fff;
+}
+#footer .sharelinks a{
+    opacity: 50%;
+    color: #fff;
+}
+#footer .sharelinks a:hover{
+    opacity: 100%;
 }
 .borderTopRadius100{
     border-top-left-radius: 80px;
@@ -634,7 +639,7 @@ h4 .smtext{
 }
 .bgBox{
     background-color: #e4e4e4;
-    padding: 5px 12px;
+    padding: 5px 30px;
     border-radius: 8px;
 
 }
@@ -761,7 +766,7 @@ input[type=checkbox]{
 }
 
 .star-rating :checked ~ label {
-color:rgb(254, 199, 65);
+color:#fec741;
 }
 
 .star-rating label:hover,
@@ -787,7 +792,13 @@ color:#fec741;
     color: #fff;
     margin-bottom: 0;
 }
-
+.bgg{
+    background-image: url("../img/testbanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+}
 .borderRadiusCarousel{
     border-radius: 40px;
 }
@@ -798,6 +809,7 @@ color:#fec741;
 .owl-carousel .owl-item img {
     width: auto;
     height: 100%;
+    border-radius: 18px;
 }
 
 #gameimg1{
@@ -818,18 +830,4 @@ color:#fec741;
 }
 .smtext4{
     font-size: 16px;
-}
-
-
-/* Banner */
-#bannerBg{
-    background-image: url("../img/bg-patch.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.banneroverlay{
-    background: rgba(137,81,41, 0.1);
-} 
-.padBoth{
-    padding: 60px 0;
 }
