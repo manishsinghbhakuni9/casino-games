@@ -46,6 +46,9 @@ a{
 .bg-greyhere{
     background: #f0f0f0;
 }
+.bg-gray{
+    background-color: #ededed;
+}
 .text-dark{
     color: #4a4a4a !important;
 }
@@ -341,6 +344,12 @@ a{
 .coloraccsite{
     color: #3089fe;
 }
+.colorYellowSite{
+    color: #fec741;
+}
+.colorGreenSite{
+    color: #3fcc60;
+}
 .coloracred{
     color: #3089fe;
     font-weight: 600;
@@ -519,6 +528,10 @@ hr{
 .borderRadius100{
     border-radius: 40px;
 }
+.borderRadius20{
+    border-radius: 20px;
+}
+
 h4 .smtext{
     font-size: 16px;
 }
@@ -830,4 +843,48 @@ color:#fec741;
 }
 .smtext4{
     font-size: 16px;
+}
+.rightBorder{
+    border-right: 2px solid #5c5a5a;
+}
+.width6{
+    width: 6%;
+}
+.width8{
+    width: 8%;
+}
+
+.linksHere li{
+    font-size: 18px;
+    line-height: 35px;
+
+}
+.accordion-button::after {
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+.accordion-button:focus{
+    outline: none !important;
+    border: none;
+}
+.accordion-button{
+    font-size: 22px !important;
+}
+.linksImgHere{
+    line-height: 45px;
+}
+.linksImgHere li {
+    font-size: 18px;
+    display: flex;
+    align-items: start;  /* Ensures the image and text are aligned */
+    gap: 10px;  /* Adds space between the image and text */
+    margin-bottom: 15px;  /* Space between list items */
+}
+
+.list-icon {
+    width: 20px;  /* Adjust size of the image */
+    height: auto;
+}
+
+.mobCasino i{
+    font-size: 14px;
 }
