@@ -180,6 +180,7 @@ a{
     background: #fff;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .2);
 }
+
 .gamesSection .boxWhite{
     background: #fff;
     border-radius: 18px;
@@ -887,4 +888,214 @@ color:#fec741;
 
 .mobCasino i{
     font-size: 14px;
+}
+
+
+.accordion-button, .accordion-item, .accordion-body{
+    border-radius: 40px !important;
+}
+
+.accordion-item{
+    background-color: #ededed !important;
+}
+
+.fontIcon{
+    font-size: 22px;
+
+}
+
+/* ### Casino Modal */
+.textlg1{
+    font-size: 16px;
+}
+.text-lg2{
+    font-size: 15px;
+
+}
+.posfix{
+    position: sticky;
+    top: 34%;
+}
+.text-underline{
+    text-decoration: underline !important;
+}
+.borderBox{
+    border: 1px solid rgb(194, 194, 194);
+}
+#secondSect button{
+    white-space: nowrap;
+}
+.borderTopsRadius20{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#visitWinnersBtn{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 9;
+}
+.textlg3{
+    font-size: 18px;
+}
+.btnDropdown{
+    border-radius: 20px !important;
+    background-color: transparent !important;
+    border: 1px solid lightgrey !important;
+    font-size: 20px;
+}
+.circle-box {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #33a201;
+    background-color: #a2c979;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #000;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3498db; /* Placeholder for profile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+.circle-score {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #33a201;
+    background-color: #a2c979;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #000;
+}
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.review-content {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.review-text {
+    font-size: 14px;
+    color: #333;
+}
+.helpful {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.textsm{
+    font-size: 16px;
+    white-space: nowrap;
+}
+.textsm {
+    font-size: 14px;
+}
+.btnDropdown {
+    font-size: 14px;
+    padding: 6px 12px;
+}
+.circle-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+.installbtn3 {
+    white-space: nowrap; /* Prevents button from breaking */
+    font-size: 14px;
+    padding: 8px 12px;
+}
+@media (max-width: 768px) {
+    .textsm {
+        font-size: 12px;
+    }
+    .btnDropdown {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .circle-box {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 11px;
+    }
+    .installbtn3 {
+        font-size: 11px;
+        padding: 3px;
+    }
+}
+.mlMinus{
+    margin-left: 0;
+}
+.mlMinus2{
+    margin-left: 0;
+
+}
+
+
+/* //settingss */
+.boxWhite2{
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    color: #4a4a4a;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #fff;
+    border-bottom: 2px solid #3498db !important ;
+    border: none;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-bottom: 2px solid #3498db !important ;
+    isolation: isolate;
+    border: none;
+    color: #4a4a4a;
+}
+.textlightgreyBg{
+    color: #788080;
+    font-size: 0.95rem;
+}
+.tabscontent form input{
+    background: #efefef;
+    border: 1px solid #efefef;
+    padding: 8px;
+    color: #788080;
+
+}
+.tabscontent form select{
+    background: #efefef;
+    color: #788080;
+
+    border: 1px solid #efefef;
+    padding: 8px;
+    width: 100%;
+}
+.flex-nowrap{
+    flex-wrap: nowrap;
+    text-align: center;
 }

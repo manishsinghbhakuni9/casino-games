@@ -116,7 +116,7 @@
         padding: 5px 15px;
     }
     .installbtn3{
-        font-size: 12px;
+        font-size: 9px;
     }
     .modal-dialog {
         max-width: 500px;
@@ -140,6 +140,20 @@
         right: -12px;
     }
 
+    /* ####nreviews */
+    .textsm{
+        font-size: 11px;
+    }
+    .btnDropdown{
+    font-size: 11px !important;
+
+    }
+    .mlMinus{
+        margin-left: 8px;
+    }
+    .mlMinus{
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 767px){
     .navbar-brand{
